@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Age Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./img/Calculator-PNG-Pic.png">
+    </head>
+    <body>
+        <form action="">
+            <fieldset class="form-container">
+                <div class="form-date">
+                    <label class="form-day" for="day">day
+                        <input type="number" class="input-day" name="day" id="day" placeholder="DD" required>
+                        <p class="invalid-mesagge-day"></p>
+                    </label>
+                    <label class="form-month" for="month">month
+                        <input type="number" class="input-month" name="month" id="month" placeholder="MM" required>
+                        <p class="invalid-mesagge-month"></p>
+                    </label>
+                    <label class="form-year" for="year">year
+                        <input type="number" class="input-year" name="year" id="year" placeholder="YYYY" required>
+                        <p class="invalid-mesagge-year"></p>
+                    </label>
+                </div>
+                <div class="form-submit">
+                    <input class ="input-submit" type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+        <main class="main"> 
+            <section class="main-section">
+                <article class="main-article">
+                    <p class="main-article-text"><span class="text-years">--</span>years</p>
+                </article>
+                <article class="main-article">
+                    <p class="main-article-text"><span class="text-months">--</span>months</p>
+                </article>
+                <article class="main-article">
+                    <p class="main-article-text"><span class="text-days">--</span>days</p>
+                </article>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
